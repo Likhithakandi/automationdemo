@@ -40,7 +40,7 @@ node('node1') {
 
     echo 'Copy'
     sh "yes | sudo cp -R bundle.tar.gz /var/www/html" 
-    sh "cd /var/www/html"
+    sh "sudo cd /var/www/html"
     sh "sudo tar -xvf bundle.tar.gz"
     echo 'Copy completed'
 }
